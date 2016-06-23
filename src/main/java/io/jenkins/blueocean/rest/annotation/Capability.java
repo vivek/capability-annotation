@@ -1,4 +1,4 @@
-package io.jenkins.blueocean.annotation;
+package io.jenkins.blueocean.rest.annotation;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
