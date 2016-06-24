@@ -1,6 +1,5 @@
 package io.jenkins.blueocean.rest.annotation;
 
-import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
@@ -32,14 +31,13 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  */
 @Retention(RUNTIME)
 @Target({TYPE})
-@Inherited
 public @interface Capability {
 
     /**
-     * Capability value must be a namespace qualified value. Typically you would use the package name of the class where
+     * Capability values must be a namespace qualified. Typically you would use the package name of the class where
      * this annotation is declared as namespace qualifier.
      *
      * @return value of this annotation
      */
-    String value();
+    String[] value();
 }
