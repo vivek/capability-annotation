@@ -1,5 +1,4 @@
 Capability annotation should be used by plugins to declare it's capability
-
  
 Example:
  
